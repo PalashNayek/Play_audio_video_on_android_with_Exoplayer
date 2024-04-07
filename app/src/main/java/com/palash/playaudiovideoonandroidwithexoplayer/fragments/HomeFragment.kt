@@ -43,7 +43,7 @@ class HomeFragment : Fragment() {
 
     private fun gotoPlayerPage(url : String){
         val bundle = Bundle().apply {
-            putString("myArgument", url)
+            putString("myURL", url)
         }
         findNavController().navigate(R.id.action_homeFragment_to_exoplayerFragment, bundle)
     }

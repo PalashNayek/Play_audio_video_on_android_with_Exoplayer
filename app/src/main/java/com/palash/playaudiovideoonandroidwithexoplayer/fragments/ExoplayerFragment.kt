@@ -13,6 +13,7 @@ import com.palash.playaudiovideoonandroidwithexoplayer.databinding.FragmentExopl
 import com.palash.playaudiovideoonandroidwithexoplayer.databinding.FragmentHomeBinding
 
 class ExoplayerFragment : Fragment() {
+
     private var _binding: FragmentExoplayerBinding? = null
     private val binding get() = _binding!!
     lateinit var player : ExoPlayer
@@ -27,7 +28,7 @@ class ExoplayerFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val myArgument = arguments?.getString("myArgument")
+        val myArgument = arguments?.getString("myURL")
         Log.d("MyVal", myArgument.toString())
 
         //initialize Exoplayer
