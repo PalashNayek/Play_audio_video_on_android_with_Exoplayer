@@ -29,7 +29,6 @@ class ExoplayerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val myArgument = arguments?.getString("myURL")
-        Log.d("MyVal", myArgument.toString())
 
         //initialize Exoplayer
         player = ExoPlayer.Builder(requireContext()).build()
