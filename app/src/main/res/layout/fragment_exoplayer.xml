@@ -9,7 +9,15 @@
     <androidx.media3.ui.PlayerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:keepScreenOn="true"
         android:id="@+id/playerView"/>
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectTrackButton"
+        android:text="Quality"
+        android:textAllCaps="false"/>-->
 
 </RelativeLayout>

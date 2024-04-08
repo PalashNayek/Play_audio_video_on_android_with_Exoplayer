@@ -8,9 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.media3.common.MediaItem
 import androidx.media3.exoplayer.ExoPlayer
-import com.palash.playaudiovideoonandroidwithexoplayer.R
 import com.palash.playaudiovideoonandroidwithexoplayer.databinding.FragmentExoplayerBinding
-import com.palash.playaudiovideoonandroidwithexoplayer.databinding.FragmentHomeBinding
 
 class ExoplayerFragment : Fragment() {
 
@@ -38,6 +36,8 @@ class ExoplayerFragment : Fragment() {
         player.setMediaItem(mediaItem)
         player.prepare()
         player.play()
+
+
     }
 
     override fun onStart() {
